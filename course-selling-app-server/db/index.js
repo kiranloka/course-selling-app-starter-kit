@@ -1,6 +1,17 @@
 const mongoose = require("mongoose");
 
-// Define mongoose schemas
+
+
+// Assuming process.env.MONGODB_URI contains your MongoDB connection URI
+mongoose.connect("mongodb+srv://kirankumarloka:kiran09@cluster0.v6vvgjg.mongodb.net/", { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Connected to MongoDB');
+    // Your application logic here
+  })
+  .catch((error) => {
+    console.error('Error connecting to MongoDB:', error.message);
+  });
+
 const userSchema = new mongoose.Schema({
   username: { type: String },
   password: String,

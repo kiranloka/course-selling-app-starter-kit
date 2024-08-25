@@ -31,6 +31,7 @@ function Course() {
         setCourse({ isLoading: false, course: res.data.course });
       })
       .catch((e) => {
+        console.log(e.message);
         setCourse({ isLoading: false, course: null });
       });
   }, []);

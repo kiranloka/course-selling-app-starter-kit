@@ -15,7 +15,7 @@ app.use("/user", userRouter);
 
 const MONGO_URL = process.env.MONGO_URL;
 mongoose
-  .connect(MONGO_URL, {
+  .connect("mongodb+srv://kirankumarloka:kiran09@cluster0.v6vvgjg.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     dbName: "courses",

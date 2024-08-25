@@ -12,7 +12,7 @@ import {
     useSetRecoilState
 } from 'recoil';
 import axios from "axios";
-import {BASE_URL} from "./config.js";
+import {BASE_URL} from "config.js"
 import {useEffect} from "react";
 
 function App() {
